@@ -15,8 +15,7 @@ Ziel ist es, den Import, die Transformation und die Ausspielung dieser Daten in 
 - **Bash** – Automatisierung der Verarbeitungsschritte
 - **MapServer** – Bereitstellung der Mapfiles
 - **ogr2ogr / GDAL** – Umwandlung der NAS-Daten in das ALKIS-Schemata der Fa. Norbit [alkisimport](https://github.com/norBIT/alkisimport/tree/master)
-- **NAS-Daten** – Bereitgestellt von:  
-  [Offene Geodaten](https://www.geodaten.sachsen.de/downloadbereich-alkis-4176.html)
+- **NAS-Daten** – Bereitgestellt von: [Offene Geodaten](https://www.geodaten.sachsen.de/downloadbereich-alkis-4176.html)
 
 ---
 
@@ -128,6 +127,8 @@ siehe hier: https://github.com/wm87/wms-opendata/tree/main/mapserver
 
 ## Laufzeiten des Skripts: create_alkis_sn.sh
 
+Durch starke Optimierung der Basis-Skripte wurden gravierend bessere Laufzeiten erreicht. Statt über 20h Laufzeit auf ca: 1h bei entsprechend o.g. Setup. Weitere Optimierungen sind möglich, jedoch sehr zeitaufwendig. Flaschenhälse zu lokalisieren ist ein Aspekt, doch konkrete Optimierungsschritte sind nocheinmal ein ganz anderes Level.
+
 | Messung         | Dauer  |
 |-----------------|--------|
 | mit Vollimport  | 75 min |
@@ -164,5 +165,3 @@ Lizenz: Datenlizenz Deutschland – Namensnennung – Version 2.0
 ### Wichtiger Hinweis
 
 Die Lizenz für Software und die Lizenz für die Geodaten sind getrennt zu betrachten und müssen jeweils eigenständig eingehalten werden. Die Nutzung der norBIT-Software unterliegt der GPL-2.0, die ALKIS-Daten der dl-de/by-2.0.
-
-# alkis_sn-wms
