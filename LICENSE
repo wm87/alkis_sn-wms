@@ -1,0 +1,31 @@
+MIT License
+
+Copyright (c) 2025 wm87
+
+Hiermit wird jeder Person, die eine Kopie dieses Softwarewerks und der zugehörigen Dokumentationen (die "Software") erhält, unentgeltlich die Erlaubnis erteilt, uneingeschränkt mit der Software zu verwenden, einschließlich und ohne Einschränkung des Rechts, sie zu nutzen, zu kopieren, zu ändern, zusammenzuführen, zu veröffentlichen, zu verbreiten, zu unterlizenzieren und/oder zu verkaufen, und Personen, denen diese Software bereitgestellt wird, diese Rechte zu verschaffen, unter den folgenden Bedingungen:
+
+Der obige Urheberrechtshinweis und dieser Genehmigungshinweis sind in allen Kopien oder wesentlichen Teilen der Software beizulegen.
+
+DIE SOFTWARE WIRD OHNE JEDE AUSDRÜCKLICHE ODER STILLSCHWEIGENDE GARANTIE BEREITGESTELLT, EINSCHLIEßLICH DER GARANTIEN DER MARKTGÄNGIGKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN ZWECK UND DER NICHTVERLETZUNG. IN KEINEM FALL SIND DIE AUTOREN ODER COPYRIGHTINHABER FÜR JEGLICHE ANSPRÜCHE, SCHÄDEN ODER SONSTIGE HAFTUNGEN VERANTWORTLICH, OB IN EINEM VERTRAGSVERHÄLTNIS, DELIKT ODER ANDERWEITIG, DIE AUS, AUS ODER IN VERBINDUNG MIT DER SOFTWARE ODER DER NUTZUNG ODER ANDEREN GESCHÄFTEN MIT DER SOFTWARE ENTSTEHEN.
+
+---
+
+# Hinweise zu Drittkomponenten und Daten
+
+Dieses Projekt nutzt externe Komponenten und Datensätze, die jeweils eigenen Lizenzbedingungen unterliegen:
+
+1. **alkisimport (Firma norBIT)**
+   - Lizenz: GNU General Public License Version 2 (GPL-2.0)
+   - Quelle: https://github.com/norBIT/alkisimport/blob/master/LICENSE
+   - Hinweis: `alkisimport` wird extern verwendet und ist nicht in den Quellcode dieses Projekts integriert.
+
+2. **GDAL / ogr2ogr**
+   - Lizenz: MIT License
+   - Quelle: https://gdal.org
+
+3. **ALKIS-Daten Hamburg**
+   - Lizenz: Datenlizenz Deutschland – Namensnennung 2.0 (dl-de/by-2.0)
+   - Quelle: Freie und Hansestadt Hamburg, Landesbetrieb Geoinformation und Vermessung (LGV)
+   - Nutzung nur mit korrektem Quellenvermerk erlaubt.
+
+Bitte beachten Sie, dass die Lizenzbedingungen für Software und Daten jeweils einzeln einzuhalten sind.

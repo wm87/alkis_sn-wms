@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1073</width>
+    <height>822</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ALKIS-Import #VERSION#</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="title">
+        <string>Datenbankverbindung</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>Service</string>
+          </property>
+          <property name="buddy">
+           <cstring>leSERVICE</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lePORT">
+          <property name="inputMask">
+           <string>99999</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="leSERVICE"/>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Benutzername</string>
+          </property>
+          <property name="buddy">
+           <cstring>leUID</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Host</string>
+          </property>
+          <property name="buddy">
+           <cstring>leHOST</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="leHOST">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>Port</string>
+          </property>
+          <property name="buddy">
+           <cstring>lePORT</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QLineEdit" name="leUID">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Paßwort</string>
+          </property>
+          <property name="buddy">
+           <cstring>lePWD</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLineEdit" name="lePWD">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>ALKIS-Schema</string>
+          </property>
+          <property name="buddy">
+           <cstring>leSCHEMA</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QLineEdit" name="leSCHEMA">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>PostGIS-Schema</string>
+          </property>
+          <property name="buddy">
+           <cstring>lePGSCHEMA</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3">
+         <widget class="QLineEdit" name="lePGSCHEMA">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLabel" name="label_14">
+          <property name="text">
+           <string>Elter-Schema</string>
+          </property>
+          <property name="buddy">
+           <cstring>leSCHEMA</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QLineEdit" name="lePARENTSCHEMA">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Datenbankname</string>
+          </property>
+          <property name="buddy">
+           <cstring>leDBNAME</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="leDBNAME"/>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string>Importeinstellungen</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="2" column="1">
+         <widget class="QComboBox" name="cbEPSG">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>Transaktionsgröße</string>
+          </property>
+          <property name="buddy">
+           <cstring>leGT</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Koordinatensystem</string>
+          </property>
+          <property name="buddy">
+           <cstring>cbEPSG</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1" colspan="3">
+         <widget class="QComboBox" name="cbPgVerdraengen">
+          <item>
+           <property name="text">
+            <string>Alle Grenzen darstellen</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Nur jeweils höchstwertige Grenze darstellen</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>Politische Grenzen</string>
+          </property>
+          <property name="buddy">
+           <cstring>cbPgVerdraengen</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLineEdit" name="leCustomEpsg">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="inputMask">
+           <string>999999</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QCheckBox" name="cbxTransform">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Eingabedaten transformieren</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>Flurstücksnummerndarstellung</string>
+          </property>
+          <property name="buddy">
+           <cstring>cbFnbruch</cstring>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1" colspan="3">
+         <widget class="QComboBox" name="cbFnbruch">
+          <item>
+           <property name="text">
+            <string>Mit Bruchstrich</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Mit Schrägstrich</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="5" column="1" colspan="3">
+         <widget class="QLineEdit" name="leGT">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="maxLength">
+           <number>32767</number>
+          </property>
+          <property name="cursorPosition">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="0" colspan="4">
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QCheckBox" name="cbxSkipFailures">
+            <property name="text">
+             <string>Alle Importfehler ignorieren</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="cbxClearProtocol">
+            <property name="text">
+             <string>Protokolltabelle löschen</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="cbxUseCopy">
+            <property name="text">
+             <string>COPY nutzen</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="cbxAvoidDupes">
+            <property name="text">
+             <string>Duplikate ignorieren</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0" colspan="4">
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QCheckBox" name="cbxCreate">
+            <property name="text">
+             <string>Datenbestand (neu)anlegen</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="cbxClean">
+            <property name="text">
+             <string>Datenbestand leeren</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="cbxHistorie">
+            <property name="text">
+             <string>Historie führen</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="cbxQuittierung">
+            <property name="text">
+             <string>Quittierung erzeugen</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string>Dateiliste</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QListWidget" name="lstFiles">
+         <property name="selectionMode">
+          <enum>QAbstractItemView::ExtendedSelection</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Häkchen bei Dateien setzen bei denen Importfehler ignoriert werden sollen.</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QPushButton" name="pbAdd">
+           <property name="text">
+            <string>Datei hinzufügen...</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbAddDir">
+           <property name="text">
+            <string>Verzeichnis hinzufügen...</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbRemove">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>Gewählte entfernen</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbSelectAll">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>Alle wählen</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbSave">
+           <property name="text">
+            <string>Liste speichern...</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pbLoad">
+           <property name="text">
+            <string>Liste laden...</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QListWidget" name="lwProtocol"/>
+    </widget>
+   </item>
+   <item>
+    <widget class="QProgressBar" name="pbProgressFile">
+     <property name="value">
+      <number>24</number>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QProgressBar" name="pbProgress">
+     <property name="value">
+      <number>24</number>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="leStatus">
+       <property name="text">
+        <string>Status</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="alive">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pbStart">
+       <property name="text">
+        <string>Starten</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pbSaveLog">
+       <property name="text">
+        <string>Protokolldatei speichern...</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pbClearLog">
+       <property name="text">
+        <string>Protokollfenster leeren</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pbLoadLog">
+       <property name="text">
+        <string>Protokolltabelle laden</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_7">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pbAbout">
+       <property name="text">
+        <string>Über...</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pbClose">
+       <property name="text">
+        <string>Schließen</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>leSERVICE</tabstop>
+  <tabstop>leHOST</tabstop>
+  <tabstop>lePORT</tabstop>
+  <tabstop>leDBNAME</tabstop>
+  <tabstop>leUID</tabstop>
+  <tabstop>lePWD</tabstop>
+  <tabstop>leSCHEMA</tabstop>
+  <tabstop>lePARENTSCHEMA</tabstop>
+  <tabstop>lePGSCHEMA</tabstop>
+  <tabstop>cbxCreate</tabstop>
+  <tabstop>cbxClean</tabstop>
+  <tabstop>cbxHistorie</tabstop>
+  <tabstop>cbxQuittierung</tabstop>
+  <tabstop>cbEPSG</tabstop>
+  <tabstop>leCustomEpsg</tabstop>
+  <tabstop>cbxTransform</tabstop>
+  <tabstop>cbFnbruch</tabstop>
+  <tabstop>cbPgVerdraengen</tabstop>
+  <tabstop>leGT</tabstop>
+  <tabstop>cbxSkipFailures</tabstop>
+  <tabstop>cbxClearProtocol</tabstop>
+  <tabstop>cbxUseCopy</tabstop>
+  <tabstop>cbxAvoidDupes</tabstop>
+  <tabstop>lstFiles</tabstop>
+  <tabstop>pbAdd</tabstop>
+  <tabstop>pbAddDir</tabstop>
+  <tabstop>pbRemove</tabstop>
+  <tabstop>pbSelectAll</tabstop>
+  <tabstop>pbSave</tabstop>
+  <tabstop>pbLoad</tabstop>
+  <tabstop>lwProtocol</tabstop>
+  <tabstop>pbStart</tabstop>
+  <tabstop>pbSaveLog</tabstop>
+  <tabstop>pbClearLog</tabstop>
+  <tabstop>pbLoadLog</tabstop>
+  <tabstop>pbAbout</tabstop>
+  <tabstop>pbClose</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>cbxCreate</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>cbEPSG</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>960</x>
+     <y>91</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1742</x>
+     <y>141</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cbxCreate</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>cbxClean</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>861</x>
+     <y>91</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1403</x>
+     <y>94</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cbxSkipFailures</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>label_4</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1058</x>
+     <y>325</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>493</x>
+     <y>490</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cbxCreate</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>cbxHistorie</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>690</x>
+     <y>50</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>920</x>
+     <y>50</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cbxCreate</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>leCustomEpsg</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>598</x>
+     <y>43</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1507</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
